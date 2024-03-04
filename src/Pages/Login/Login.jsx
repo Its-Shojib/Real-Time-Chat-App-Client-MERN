@@ -52,7 +52,6 @@ const Login = () => {
                         />
                         <span onClick={() => setShowPassword(!showPassword)} className="absolute right-3 bottom-4">{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</span>
                     </div>
-                    <hr className="my-3" />
                     <p className="cursor-pointer text-right underline my-3">Forgot password?</p>
 
                     <button
