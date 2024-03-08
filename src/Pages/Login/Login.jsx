@@ -7,7 +7,6 @@ import Lottie from "lottie-react";
 // import Swal from 'sweetalert2';
 import animation from '../../assets/loginAnimation.json'
 
-
 const Login = () => {
     let [showPassword, setShowPassword] = useState(false);
     // let navigate = useNavigate()
