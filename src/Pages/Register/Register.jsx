@@ -26,6 +26,8 @@ const Register = () => {
             email: email,
             password: password
         }
+
+        
         console.log(info)
 
         if (password.length < 6) {
