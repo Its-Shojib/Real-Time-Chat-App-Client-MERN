@@ -22,7 +22,6 @@ const Login = () => {
             password: password
         }
         console.log(info);
-
     }
 
 
