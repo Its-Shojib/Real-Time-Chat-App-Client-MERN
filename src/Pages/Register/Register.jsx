@@ -10,7 +10,6 @@ import Lottie from "lottie-react";
 import animation from '../../assets/SignUpAnimation.json'
 
 const Register = () => {
-
     let [showPassword, setShowPassword] = useState(false);
 
     // let navigate = useNavigate()
