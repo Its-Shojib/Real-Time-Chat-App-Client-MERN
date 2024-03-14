@@ -4,6 +4,7 @@ import useConversation from "../../zustand/useConversation";
 import useGetConversations from "../../hooks/useGetConversations";
 import toast from "react-hot-toast";
 
+
 const SearchInput = () => {
 	const [search, setSearch] = useState("");
 	const { setSelectedConversation } = useConversation();
@@ -23,7 +24,7 @@ const SearchInput = () => {
 			setSearch("");
 		} else toast.error("No such user found!");
 	};
-	
+
 	return (
 		<form onSubmit={handleSubmit} className='flex items-center gap-2'>
 			<input
