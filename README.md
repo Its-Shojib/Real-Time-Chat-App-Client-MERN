@@ -1,8 +1,42 @@
-# React + Vite
+# MERN Stack Project: Build and Deploy a Real Time Chat App | JWT, Socket.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Live Link: 
+ [Click here]()
 
-Currently, two official plugins are available:
+![Chat-App](https://i.ibb.co/DLqS6GM/image.png)
+![Chat-App](https://i.ibb.co/fYrVJR8/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Some Features:
+
+-   🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
+-   💀 Authentication && Authorization with JWT
+-   ☠ Passward Cncrypted in MongoDB via bcrypt
+-   👾 Real-time messaging with Socket.io
+-   🚀 Online user status (Socket.io and React Context)
+-   🎵 Real-time chat notifications sounds
+-   👌 Global state management with Zustand
+-   🐞 Error handling both on the server and on the client
+-   ⭐ At the end Deployment like a pro for FREE!
+-   ⏳ And much more!
+
+### Setup .env file
+
+```js
+PORT=...
+MONGO_DB_URI=...
+JWT_SECRET=...
+NODE_ENV=...
+```
+
+### Build the app
+
+```shell
+npm run build
+```
+
+### Start the app
+
+```shell
+npm start
+```
