@@ -13,23 +13,30 @@ const Login = () => {
 		await login(username, password);
 	};
 
+	const style = {
+		"background-image": `url("/bg.png")`,
+	}
+
+
 	return (
-		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
+		<div style={style} className='flex flex-col items-center justify-center mx-auto w-full md:w-[800px] lg:w-4/12 min-h-[500px] rounded-lg'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Login
 					<span className='text-blue-500'> ChatApp</span>
 				</h1>
 
-				<form onSubmit={handleSubmit}>
+				<form
+					onSubmit={handleSubmit}
+					className="p-5">
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Username</span>
+							<span className='text-white label-text'>Username</span>
 						</label>
 						<input
 							type='text'
 							placeholder='Enter username'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 text-black'
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 						/>
@@ -37,12 +44,12 @@ const Login = () => {
 
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Password</span>
+							<span className='text-white label-text'>Password</span>
 						</label>
 						<input
 							type='password'
 							placeholder='Enter Password'
-							className='w-full input input-bordered h-10'
+							className='w-full input input-bordered h-10 text-black'
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>
