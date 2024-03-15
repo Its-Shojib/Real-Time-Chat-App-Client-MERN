@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useLogin from "../../hooks/useLogin";
+import { IoMdLogIn } from "react-icons/io";
 
 const Login = () => {
 	const [username, setUsername] = useState("");
@@ -19,16 +20,16 @@ const Login = () => {
 
 
 	return (
-		<div style={style} className='flex flex-col items-center justify-center mx-auto w-full md:w-[800px] lg:w-4/12 min-h-[500px] rounded-lg'>
+		<div style={style} className='flex flex-col items-center justify-center mx-auto w-full md:w-6/12 lg:w-4/12 min-h-[500px] rounded-lg'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
-				<h1 className='text-3xl font-semibold text-center text-gray-300'>
-					Login
-					<span className='text-blue-500'> ChatApp</span>
+				<h1 className='text-3xl text-center text-gray-300 font-bold'>
+					Login <IoMdLogIn className="inline" />
+					{/* <span className='text-blue-500'> ChatApp</span> */}
 				</h1>
 
 				<form
 					onSubmit={handleSubmit}
-					className="p-5">
+					className="p-5 space-y-2">
 					<div>
 						<label className='label p-2'>
 							<span className='text-white label-text'>Username</span>
@@ -54,8 +55,8 @@ const Login = () => {
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</div>
-					<Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
-						{"Don't"} have an account?
+					<Link to='/signup' className='text-sm text-white hover:underline hover:text-blue-600 mt-2 inline-block'>
+						{"Don't"} have an account? SignUp
 					</Link>
 
 					<div>
