@@ -23,8 +23,17 @@ const SignUp = () => {
 		await signup(inputs);
 	};
 
+	const style = {
+		"background-image": `url("/home.jpg")`,
+		"background-repeat": "no-repeat",
+        "background-size": "cover",
+        "background-position": "center",
+	}
+
 	return (
-		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
+		<div 
+		style={style}
+		className='flex flex-col items-center justify-center mx-auto w-full md:w-6/12 lg:w-4/12 min-h-[500px] rounded-lg'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
 					Sign Up <IoPersonAdd className="inline" />
@@ -37,7 +46,7 @@ const SignUp = () => {
 						</label>
 						<input
 							type='text'
-							placeholder='John Doe'
+							placeholder='Full Name'
 							className='w-full input input-bordered  h-10'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
@@ -50,7 +59,7 @@ const SignUp = () => {
 						</label>
 						<input
 							type='text'
-							placeholder='johndoe'
+							placeholder='username'
 							className='w-full input input-bordered h-10'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}

@@ -14,22 +14,25 @@ const Login = () => {
 		await login(username, password);
 	};
 
-	// const style = {
-	// 	"background-image": `url("/bg.png")`,
-	// }
+	const style = {
+		"background-image": `url("/home.jpg")`,
+		"background-repeat": "no-repeat",
+        "background-size": "cover",
+        "background-position": "center",
+	}
 
 
 	return (
-		<div className='flex flex-col items-center justify-center mx-auto w-full md:w-6/12 lg:w-4/12 min-h-[500px] rounded-lg'>
+		<div
+		style={style}
+		className='flex flex-col items-center justify-center mx-auto w-full md:w-6/12 lg:w-4/12 min-h-[500px] rounded-lg'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl text-center text-gray-300 font-bold'>
 					Login <IoMdLogIn className="inline" />
 					{/* <span className='text-blue-500'> ChatApp</span> */}
 				</h1>
 
-				<form
-					onSubmit={handleSubmit}
-					className="p-5 space-y-2">
+				<form onSubmit={handleSubmit}>
 					<div>
 						<label className='label p-2'>
 							<span className='text-white label-text'>Username</span>
