@@ -8,7 +8,7 @@ import { useAuthContext } from "./context/AuthContext";
 function App() {
 	const { authUser } = useAuthContext();
 	const style = {
-		"background-image": `url("/bg.jpg")`,
+		"background-image": `url("/solid.jpg")`,
 		"background-repeat": "no-repeat",
         "background-size": "cover",
         "background-position": "center",

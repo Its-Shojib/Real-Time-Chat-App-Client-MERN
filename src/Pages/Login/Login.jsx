@@ -14,13 +14,13 @@ const Login = () => {
 		await login(username, password);
 	};
 
-	const style = {
-		"background-image": `url("/bg.png")`,
-	}
+	// const style = {
+	// 	"background-image": `url("/bg.png")`,
+	// }
 
 
 	return (
-		<div style={style} className='flex flex-col items-center justify-center mx-auto w-full md:w-6/12 lg:w-4/12 min-h-[500px] rounded-lg'>
+		<div className='flex flex-col items-center justify-center mx-auto w-full md:w-6/12 lg:w-4/12 min-h-[500px] rounded-lg'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 				<h1 className='text-3xl text-center text-gray-300 font-bold'>
 					Login <IoMdLogIn className="inline" />
