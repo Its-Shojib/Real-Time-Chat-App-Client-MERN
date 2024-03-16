@@ -17,7 +17,7 @@ function App() {
 	return (
 		<div 
 		style={style}
-		className='max-w-[1300px] mx-auto bg-white p-4 h-screen flex items-center justify-center'>
+		className='max-w-[1300px] mx-auto bg-white p-4 min-h-screen flex items-center justify-center'>
 			<Routes>
 				<Route path='/' element={authUser ? <Home /> : <Navigate to={"/login"} />} />
 				<Route path='/login' element={authUser ? <Navigate to='/' /> : <Login />} />
