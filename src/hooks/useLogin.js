@@ -1,7 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useAuthContext } from "../context/AuthContext";
-// import axios from "axios";
 
 const useLogin = () => {
 	const [loading, setLoading] = useState(false);
@@ -12,7 +11,6 @@ const useLogin = () => {
 		if (!success) return;
 		setLoading(true);
 		try {
-			// let res = await axios.post('http://localhost:5000/api/auth/login', {username, password});
 			const res = await fetch("http://localhost:5000/api/auth/login", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
@@ -21,8 +19,6 @@ const useLogin = () => {
 			});
 
 			const data = await res.json();
-			// let data = res.data;
-			// console.log(res.data);
 			if (data.error) {
 				throw new Error(data.error);
 			}
@@ -46,6 +42,5 @@ function handleInputErrors(username, password) {
 		toast.error("Please fill in all fields");
 		return false;
 	}
-
 	return true;
 }
