@@ -11,8 +11,7 @@ function App() {
 		"background-image": `url("/solid.jpg")`,
 		"background-repeat": "no-repeat",
         "background-size": "cover",
-        "background-position": "center",
-		
+        "background-position": "center"
 	}
 	return (
 		<div 
